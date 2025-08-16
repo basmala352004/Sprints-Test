@@ -8,11 +8,14 @@ jobs:
   sprints_job:
     runs_on: ubuntu-latest
     steps:
-      -name: list files
-      -run: ./script.sh
+      - name: checkout
+        run: actions/checkout@v5.0.0
+
+      - name: list files
+        run: bash/script.sh
 
   basmala_job:
     runs_on: windows
     steps:
-      -name: list files
-      -run: echo "i am basmala"
+      - name: list files
+        run: echo "i am basmala"
