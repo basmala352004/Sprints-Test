@@ -6,7 +6,7 @@ on:
 
 jobs:
   sprints_job:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         run: actions/checkout@v5.0.0
@@ -15,7 +15,7 @@ jobs:
         run: bash/script.sh
 
   basmala_job:
-    runs_on: windows
+    runs-on: windows
     steps:
       - name: list files
         run: echo "i am basmala"
