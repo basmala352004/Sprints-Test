@@ -1,0 +1,18 @@
+name: my first workflow | shell script
+on:
+  push:
+    branches:
+      -main
+
+jobs:
+  sprints_job:
+    runs_on: ubuntu-latest
+    steps:
+      -name: list files
+      -run: echo "CICD"
+
+  basmala_job:
+    runs_on: windows
+    steps:
+      -name: list files
+      -run: echo "i am basmala"
