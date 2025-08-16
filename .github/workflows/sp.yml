@@ -9,7 +9,7 @@ jobs:
     runs_on: ubuntu-latest
     steps:
       -name: list files
-      -run: echo "CICD"
+      -run: ./script.sh
 
   basmala_job:
     runs_on: windows
