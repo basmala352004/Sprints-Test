@@ -18,7 +18,7 @@ jobs:
           echo "running on os ${{ matrix.os }}"
           echo "Node version: ${{ matrix.node }}"
 
-      - name: Set up node
+      - name: Set up nodes
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
